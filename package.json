@@ -33,6 +33,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
+    "clean": "rimraf dist/",
     "lint": "tsdx lint",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
