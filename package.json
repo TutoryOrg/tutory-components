@@ -37,7 +37,7 @@
     "lint": "tsdx lint",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "compile": "npm run clean && tsdx build ",
+    "compile": "npm run clean && tsdx build",
     "npmupload:patch": "npm version patch && npm run compile && npm publish",
     "npmupload:minor": "npm version minor && npm run compile && npm publish",
     "npmupload:major": "npm version major && npm run compile && npm publish",
