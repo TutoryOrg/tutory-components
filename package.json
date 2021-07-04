@@ -1,0 +1,22 @@
+{
+  "name": "@TutoryOrg/tutory-components",
+  "version": "1.0.0",
+  "description": "github packages ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TutoryOrg/tutory-components.git"
+  },
+  "publishConfig":{
+    "registry": "https://npm.pkg.github.com"
+  },
+  "author": "stalynAlejandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TutoryOrg/tutory-components/issues"
+  },
+  "homepage": "https://github.com/TutoryOrg/tutory-components#readme"
+}
