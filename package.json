@@ -2,7 +2,6 @@
   "name": "@TutoryOrg/tutory-components",
   "version": "0.1.0",
   "description": "github packages ui",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TutoryOrg/tutory-components.git"
