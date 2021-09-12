@@ -1,0 +1,63 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { Input } from "../components/Input";
+
+<Meta 
+  title="Components/Input"
+  component={Input}
+  argTypes={{
+    text: {
+      control: 'text',
+    },
+    textHolder: {
+      control: 'text',
+    },
+    size: {
+      options: ["s", "m", "l"],
+      control: {type: "select"}
+    },
+    textColor: {
+      options: ["text", "password"],
+      control: { type: "select" }
+    },
+    textColor: {
+      control: 'color',
+    },
+    backgroundColor: {
+      control: 'color',
+    },
+    borderColor: {
+      control: 'color',
+    }
+  }}
+/>
+
+# Input
+
+export const Template = (args) => <Input {...args} />
+
+Story for `Input` component:
+
+<Canvas>
+  <Story 
+    name="Custom Input"
+    args={{
+      text: "Is an input",
+      textHolder: "This is a placeHolder",
+      size: "m",
+      textColor: "black",
+      backgroundColor: "white",
+      borderColor: "black",
+      textType: "password"
+    }}
+  >
+  {Template.bind({})}
+  </Story>
+  <Story 
+    name="Theme Input"
+    args={{
+      text: "This is an input",
+    }}
+  >
+  {Template.bind({})}
+  </Story>
+</Canvas>

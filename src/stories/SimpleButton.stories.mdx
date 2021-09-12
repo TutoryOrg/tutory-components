@@ -1,0 +1,52 @@
+<!--- SimpleButton.stories.mdx -->
+
+import { Meta, Story, Canvas, ArgsTable} from '@storybook/addon-docs';
+import { SimpleButton } from '../components/SimpleButton';
+
+<Meta title="Components/SimpleButton" component={SimpleButton} />
+
+
+# SimpleButton 
+export const Template = (args) => <SimpleButton {...args} />
+
+Let's defined a story for our `SimpleButton` component:
+
+<Story
+  name="Button"
+  args={{
+    title: "MyButton",
+    primary: true
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+We can drop it into canvas to get a code snippet:
+
+<Canvas>
+  <Story 
+    name="Normal"
+    args={{ 
+      title: "Button",
+      primary: false,
+      onClick: console.log("You clicked me")
+  }}>
+  {Template.bind({})}
+  </Story>
+  <Story 
+    name="Primary"
+    args={{ 
+      title: "Primary ",
+      primary: true,
+      onClick: console.log("You clicked me")
+  }}>
+  {Template.bind({})}
+  </Story>
+</Canvas>
+
+
+### Badge
+
+Let's define a story for our component
+
+<ArgsTable of={SimpleButton} />

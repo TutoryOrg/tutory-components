@@ -1,0 +1,65 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { Button } from '../components/Button';
+
+<Meta 
+  title="Components/Button" 
+  component={Button} 
+  argTypes={{
+    text: {
+      control: 'text',
+    },
+    size: {
+      options: ["s", "m", "l"],
+      control: { type: "select" }
+    },
+    textColor: {
+      control: 'color',
+    },
+    backgroundColor: { 
+      control: 'color', 
+    },
+    borderColor: {
+      control: 'color',
+    },
+  }}
+/>
+
+# Button
+
+export const Template = (args) => <Button {...args} />
+
+Let's defined a story for our `Button` component:
+
+<Canvas>
+   <Story
+    name="Custom Button"
+    args={{
+      text: "REGISTER",
+      size: "s",
+      textColor: "black",
+      backgroundColor: "white",
+      borderColor: undefined,
+      onClick: () => console.log("Clicked Button")
+    }}
+  >
+    {Template.bind({})} 
+  </Story> 
+  <Story
+    name="Theme Button"
+    args={{
+      text: "LOG IN",
+      size: "s",
+      onClick: () => console.log("Clicked Button")
+    }}
+  >
+    {Template.bind({})} 
+  </Story>
+</Canvas>
+
+## ArgsTable
+
+### White Button
+<ArgsTable story="Custom Button" />
+
+### Black Button
+<ArgsTable story="Theme Button" />
