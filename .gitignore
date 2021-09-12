@@ -4,6 +4,9 @@
 .github/
 .storybook/
 
+# vimstuff
+*.swp
+
 # dependencies
 /node_modules
 /.pnp

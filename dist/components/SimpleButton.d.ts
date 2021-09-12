@@ -1,3 +1,8 @@
 /// <reference types="react" />
-declare const SimpleButton: () => JSX.Element;
+interface ISimpleButton {
+    title: string;
+    color: string;
+    onClick: Function;
+}
+declare const SimpleButton: ({ title, color, onClick }: ISimpleButton) => JSX.Element;
 export { SimpleButton };
