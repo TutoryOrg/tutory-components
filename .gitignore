@@ -2,7 +2,7 @@
 
 .npmrc
 .github/
-.storybook/
+#.storybook/
 
 # vimstuff
 *.swp
