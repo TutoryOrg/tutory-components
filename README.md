@@ -1,6 +1,4 @@
 # Tutory
-Connecting students and teachers. Like a forum anyone can create a Post asking for help or proposing a class, once the Post it's done students can subscribe to this class or a teacher can propose to give this lecture.
-
 ## Documentation
 
 Check the proposal in [Word.](https://docs.google.com/document/d/14mxN7iK4Ddms988LjxRuGUUeWWw6vdrB7YEPxypIx9Y/edit?usp=sharing)
